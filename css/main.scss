@@ -1,0 +1,489 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3em solid #FF9922;
+    margin: 2em 0 2em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@import "globals/variables";
+@import "globals/mixins";
+@import "components/pagination";
+@import "components/grid";
+
+.wrapper{
+   margin: 0 auto;
+   padding: 0 .9em 0 .9em;
+}
+
+.main {
+    padding: 5em 0 0 0;
+}
+// Logo
+#logo {
+    float: right;
+    margin-top: 0.6em;
+    object {
+        width:220px;
+    }
+}
+
+// General //////////////////////////////////////////
+header {
+}
+h4 {
+    margin: 0;
+}
+.email{
+    color:$link-color;
+}
+
+// Links /////////////////////////////////////////////
+a {
+    color:$link-color;
+    text-decoration:none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+// Twitter ///////////////////////////////////////////
+ a.twitter-nick {
+        font-size:0.9em;
+        &:before {
+            content: "@";
+        }
+}
+// Navigation /////////////////////////////////////////
+#nav-top{
+    margin: 0 auto;
+}
+.nav-item {
+    margin-top:40px;
+    float:left;
+    margin-right:5px;
+}
+.main-nav{
+    float:left;
+}
+.site-navigation{
+    ul {
+        padding:0;
+        margin:0;
+    }
+    a {
+        padding:50px 15px 5px 15px;
+        text-align:center;
+        color:$link-color;
+        letter-spacing: 1px;
+        &:hover{
+            text-decoration:none;
+            background-color:$gray-color;
+            @include navigation-hover;
+        }
+        &:active{
+            background-color:$gray-color;
+            color:white;
+        }
+    }
+    .selected{
+        background-color:$gray-color;
+        color:white;
+    }
+}
+
+// Landingpage //////////////////////////////////
+
+
+.about, .meeting, .interest{
+    margin-bottom:6em;
+    p {
+        margin-top:1.4em;
+        font-size:1.1em;
+    }
+    h1 {
+        vertical-align:bottom;
+        margin:0;
+        padding:0;
+        color:$link-color;
+        font-weight:100;
+    }
+}
+
+// Members ///
+.members-container, .team-container{
+    background-color:$light-cream-background-color;
+}
+.members, .team {
+    padding-bottom: 2em;
+    color:$cream-color;
+    h1 {
+        font-size: 2.5em;
+        text-align:center;
+    }
+    h3 {
+        font-weight:300;
+        text-align:center;
+    }
+    li.member {
+        float:left;
+        padding:2em;
+        list-style:none;
+    }
+}
+.member-card-list {
+
+    a.twitter-nick {
+        color:$cream-color;
+    }
+    img.member-avatar{
+        width:70px;
+        -moz-border-radius:5px;
+        border-radius: 5px;
+
+    }
+}
+
+
+// Team //////////////////////////////////////
+.team {
+    margin-top:5em;
+    // Team //
+    li {
+        float:left;
+        list-style:none;
+        padding:1em 1em;
+        div {
+            float:left;
+        }
+        .team-image {
+            margin-right:1em;
+        }
+    }
+    img.team-avatar{
+        width:120px;
+        -moz-border-radius:10px;
+        border-radius: 10px;
+
+    }
+    .twitter-nick{
+        color:$cream-color;
+    }
+}
+
+// Contact /////////////////////////////////////
+.imprint {
+
+    margin-top:5em;
+     p {
+            margin:0.5em 0 0 0;
+        }
+    h2 {
+        color:$link-color;
+        font-weight:200;
+        font-size:2.5em;
+    }
+    h3 {
+        margin:1em 0 0;
+    }
+    address {
+        padding-top:0.5em;
+    }
+}
+
+
+// Blog /////////////////////////////////////////
+article {
+    margin-bottom: 3em;
+    header {
+        margin-bottom:1em;
+    }
+}
+.blog-entry{
+    h1 {
+        font-weight:200;
+        margin-bottom:0;
+        a {
+            color:$text-color;
+            &:hover{
+                color:$link-color;
+            }
+        }
+    }
+    p {
+        margin-top:0;
+    }
+    // Tags
+    .tag, .post-date, .post-tags {
+        color:$gray-color;
+        word-wrap: nowrap;
+        font-size:0.9em;
+        p {
+            margin:0;
+            padding:0;
+        }
+    }
+    a.tag:before {
+        content: "#";
+    }
+    .post-date{
+        float:right;
+    }
+    // Entry Content
+    a {
+        color:$link-color;
+    }
+    // Grid
+    .grid-row {
+        width:100%;
+    }
+    .grid-span{
+        img{
+            width:100%;
+        }
+    }
+}
+
+
+// Footer /////////////////////////////////////////
+.footer-container {
+    padding-top: 3em;
+}
+
+footer {
+    padding-top:2em;
+    .footer_copyright-imprint {
+      padding-top: 1.5em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    height:200px;
+    color:$cream-color;
+    text-align:center;
+    font-size: 0.9em;
+    p {
+        padding:0;
+        margin:0;
+    }
+    .footer_copyright{
+        float:left;
+    }
+    .footer_imprint-contact-legal{
+        padding-right:1em;
+        float:right;
+    }
+    a{
+        color:$cream-color;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

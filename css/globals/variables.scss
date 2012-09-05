@@ -1,0 +1,20 @@
+// Sizing
+
+
+
+// Colors
+$link-color: #FF9922;
+$text-color:#222;
+$gray-color:#666;
+$light-gray-color:#DDD;
+$blue-color:#154890;
+$light-blue-color:#6699FF;
+$light-cream-background-color:#F5EDE3;
+$cream-color:#AA9885;
+$footer:#CCA16D;
+
+
+// Media Queries
+$iphone-query: "all and (max-width: 480px)"; // Only width, not device width
+$small-query: "all and (max-width: 660px)";
+$retina-query: "only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)";

@@ -1,0 +1,57 @@
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        max-width:400px;
+    }
+    .grid-span{
+        width:100%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .wrapper {
+        max-width:640px;
+    }
+    .grid-span{
+        width:100%;
+    }
+}
+@media screen and (min-width: 720px) {
+    .wrapper {
+        max-width:720px;
+    }
+    .grid-span{
+        margin-left: 1em;
+        margin-right: 1em;
+        float:left;
+        width:45%%;
+    }
+    .switch {
+      float:right;
+      p {
+        text-align:right;
+      }
+    }
+    .grid-row [class*="span"]:first-child {
+      margin-left: 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        max-width:920px;
+    }
+    .grid-span{
+      h1 {
+        text-align:right;
+        font-size:5.0em;
+      }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-span{
+    text-align:left;
+      h1 {
+        font-size:4.0em;
+      }
+    }
+}
