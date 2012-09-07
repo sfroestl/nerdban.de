@@ -1,63 +1,248 @@
-/*
-Syntax error: Undefined variable: "$link-color".
-        on line 18 of css/custom.scss
+/* ========================================================
+    // General //
+   ===================================================== */
+.wrapper {
+  margin: 0 5%;
+  width: 90%; }
 
-13: 
-14: h4 {
-15:     margin: 0;
-16: }
-17: .email{
-18:     color:$link-color;
-19: }
-20: img{
-21:     width:100%;
-22: }
-23: 
+h4 {
+  margin: 0; }
 
-Backtrace:
-css/custom.scss:18
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/script/variable.rb:49:in `_perform'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/script/node.rb:40:in `perform'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:294:in `visit_prop'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:316:in `visit_rule'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `each'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:298:in `block in watch'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
-/Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$link-color\".\A         on line 18 of css/custom.scss\A \A 13: \A 14: h4 {\A 15:     margin: 0;\A 16: }\A 17: .email{\A 18:     color:$link-color;\A 19: }\A 20: img{\A 21:     width:100%;\A 22: }\A 23: "; }
+.email {
+  color: #ff9922; }
+
+img {
+  width: 100%; }
+
+a {
+  color: #ff9922;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+a.twitter-user:before {
+  content: "@"; }
+
+/* ========================================================
+    // Mobile Menue //
+   ===================================================== */
+#logo img {
+  width: 280px; }
+
+.header-container {
+  margin-bottom: 1em; }
+
+nav.site-navigation ul {
+  margin: 0;
+  padding: 0; }
+nav.site-navigation a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  color: #666666;
+  background: #dddddd; }
+  nav.site-navigation a:hover {
+    color: #ff9922;
+    text-decoration: none;
+    background-color: #666666; }
+  nav.site-navigation a.selected {
+    color: white;
+    background-color: #666666; }
+
+/* ========================================================
+    // Mobile Footer //
+   ===================================================== */
+footer {
+  color: #aa9885;
+  text-align: center;
+  font-size: 0.9em; }
+  footer a {
+    color: #aa9885; }
+
+/* ========================================================
+    // Mobile Landingpage //
+   ===================================================== */
+.about, .meeting, .interest {
+  margin-bottom: 2em; }
+  .about h1, .about p, .meeting h1, .meeting p, .interest h1, .interest p {
+    padding: 0;
+    margin: 0; }
+  .about h1, .meeting h1, .interest h1 {
+    vertical-align: bottom;
+    color: #ff9922;
+    font-weight: 100; }
+
+.members-container, .team-container {
+  background-color: #f5ede3;
+  padding-bottom: 3em; }
+
+.members, .team {
+  color: #aa9885; }
+  .members .member-card-container, .team .member-card-container {
+    min-height: 75px;
+    width: 100%; }
+  .members p, .team p {
+    padding: 1em 0 0 0;
+    margin: 0; }
+  .members h1, .team h1 {
+    font-size: 2.5em;
+    text-align: center; }
+  .members h3, .team h3 {
+    font-weight: 300;
+    text-align: center; }
+  .members ul, .team ul {
+    padding: 0; }
+  .members li, .team li {
+    border-top: 1px dotted #aa9885;
+    font-size: 0.9em;
+    list-style: none;
+    padding: 1em 0 1em 0;
+    margin-bottom: 1em; }
+    .members li img, .team li img {
+      float: right; }
+  .members a.twitter-user, .team a.twitter-user {
+    font-weight: 200;
+    color: #aa9885; }
+  .members img, .team img {
+    width: 75px;
+    -moz-border-radius: 40px;
+    border-radius: 40px; }
+
+/* ========================================================
+    // Mobile Imprint //
+   ===================================================== */
+.imprint {
+  margin-top: 3em; }
+  .imprint p {
+    margin: 0.5em 0 0 0; }
+  .imprint h2 {
+    color: #ff9922;
+    font-weight: 200;
+    font-size: 2.5em; }
+  .imprint h3 {
+    margin: 1em 0 0; }
+  .imprint address {
+    padding-top: 0.5em; }
+    .imprint address p {
+      margin: 0; }
+
+.team {
+  margin-top: 5em; }
+  .team li {
+    float: left;
+    list-style: none;
+    padding: 1em 1em; }
+    .team li div {
+      float: left; }
+    .team li .team-image {
+      margin-right: 1em; }
+  .team img.team-avatar {
+    width: 120px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+
+/* ========================================================
+    // Media Queries //
+   ===================================================== */
+@media screen and (min-width: 480px) {
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  nav.site-navigation a {
+    float: left;
+    width: 44%;
+    margin: 0 1.7%;
+    padding: 15px 2%;
+    margin-bottom: 0; }
+  nav.site-navigation li:first-child a {
+    margin-left: 0; }
+  nav.site-navigation li:last-child a {
+    margin-right: 0; }
+
+  /* ====================
+     INTERMEDIATE: About etc
+  ==================== */
+  .about h1, .meeting h1, .interest h1 {
+    font-size: 3em; }
+
+  .members li {
+    float: left;
+    padding: 2% 3%;
+    width: 40%;
+    border: none; }
+    .members li img {
+      float: left;
+      margin-right: 2%; }
+
+  .footer-container {
+    margin: 2em 0; }
+    .footer-container footer .footer_copyright {
+      float: left; }
+    .footer-container footer .footer_imprint-contact-legal {
+      float: right; } }
+@media screen and (min-width: 768px) {
+  .content-container {
+    margin-top: 3em; }
+
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  div#logo {
+    float: right; }
+
+  nav.site-navigation a {
+    width: 15%;
+    padding: 20px 1% 7px; }
+
+  /* ====================
+    INTERMEDIATE: About etc
+   ==================== */
+  .about, .meeting, .interest {
+    margin-bottom: 3em; }
+    .about h1, .meeting h1, .interest h1 {
+      font-size: 3.5em; }
+
+  .members li {
+    float: left;
+    padding: 2% 3%;
+    width: 27%;
+    border: none; }
+    .members li img {
+      float: left;
+      margin-right: 2%; }
+
+  .grid-left {
+    float: left;
+    width: 44%;
+    text-align: right; }
+
+  .grid-right {
+    width: 54%;
+    float: right; } }
+@media screen and (min-width: 1024px) {
+  /* ====================
+      INTERMEDIATE: General
+     ==================== */
+  .content-container {
+    margin-top: 4.54em; }
+
+  .wrapper {
+    margin: auto;
+    max-width: 1070px; }
+
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  nav.site-navigation a {
+    width: 10%; }
+
+  /* ====================
+    INTERMEDIATE: About etc
+   ==================== */
+  .about, .meeting, .interest {
+    margin-bottom: 4em; }
+    .about h1, .meeting h1, .interest h1 {
+      font-size: 5em; } }
