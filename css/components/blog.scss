@@ -1,0 +1,51 @@
+// Blog /////////////////////////////////////////
+article {
+    margin-bottom: 3em;
+    header {
+        margin-bottom:1em;
+    }
+}
+.blog-entry{
+    h1 {
+        font-weight:200;
+        margin-bottom:0;
+        a {
+            color:$text-color;
+            &:hover{
+                color:$link-color;
+            }
+        }
+    }
+    p {
+        margin-top:0;
+    }
+    // Tags
+    .tag, .post-date, .post-tags {
+        color:$gray-color;
+        word-wrap: nowrap;
+        font-size:0.9em;
+        p {
+            margin:0;
+            padding:0;
+        }
+    }
+    a.tag:before {
+        content: "#";
+    }
+    .post-date{
+        float:right;
+    }
+    // Entry Content
+    a {
+        color:$link-color;
+    }
+    // Grid
+    .grid-row {
+        width:100%;
+    }
+    .grid-span{
+        img{
+            width:100%;
+        }
+    }
+}

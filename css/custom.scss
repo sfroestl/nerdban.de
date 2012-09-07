@@ -1,0 +1,360 @@
+
+/* ========================================================
+    // General //
+   ===================================================== */
+.wrapper{
+    margin: 0 5%;
+    width:90%;
+}
+
+.main {
+    //padding: 5em 0 0 0;
+}
+
+h4 {
+    margin: 0;
+}
+.email{
+    color:$link-color;
+}
+img{
+    width:100%;
+}
+
+///// Links /////
+a {
+    color:$link-color;
+    text-decoration:none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+///// Twitter /////
+ a.twitter-user {
+        &:before {
+            content: "@";
+        }
+}
+
+
+
+/* ========================================================
+    // Mobile Menue //
+   ===================================================== */
+#logo {
+    img {
+        width:280px;
+    }
+}
+.header-container {
+      margin-bottom: 1em;
+}
+nav.site-navigation {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px 0;
+
+        text-align: center;
+        text-decoration: none;
+        font-weight: 400;
+
+        color: $gray-color;
+        background: $light-gray-color;
+    &:hover{
+        color:$link-color;
+        text-decoration:none;
+         background-color:$gray-color;
+
+    }
+    &.selected {
+            color:white;
+            background-color:$gray-color;
+        }
+    }
+}
+
+
+
+/* ========================================================
+    // Mobile Footer //
+   ===================================================== */
+
+footer {
+  color:$cream-color;
+  text-align:center;
+  font-size: 0.9em;
+  a {
+    color:$cream-color;
+  }
+
+}
+
+
+/* ========================================================
+    // Mobile Landingpage //
+   ===================================================== */
+
+///// About Meeting Interest  /////
+.about, .meeting, .interest{
+    margin-bottom: 2em;
+    h1, p {
+      padding:0;
+      margin:0;
+    }
+    h1 {
+      vertical-align:bottom;
+      color:$link-color;
+      font-weight: 100;
+    }
+}
+
+/////Members /////
+.members-container, .team-container {
+  background-color:$light-cream-background-color;
+  padding-bottom:3em;
+}
+
+.members, .team {
+  .member-card-container{
+    min-height:75px;
+    width:100%;
+  }
+  p {
+    padding: 1em 0 0 0;
+    margin:0;
+  }
+  color:$cream-color;
+  h1 {
+    font-size: 2.5em;
+    text-align:center;
+  }
+  h3 {
+    font-weight:300;
+    text-align:center;
+  }
+  ul {
+    padding:0;
+  }
+  li {
+    border-top: 1px dotted $cream-color;
+    font-size:0.9em;
+    list-style:none;
+    padding: 1em 0 1em 0 ;
+    margin-bottom:1em;
+
+    img {
+      float:right;
+    }
+  }
+  a.twitter-user {
+    font-weight:200;
+    color:$cream-color;
+  }
+  img {
+    width:75px;
+    -moz-border-radius:40px;
+    border-radius: 40px;
+
+  }
+}
+
+/* ========================================================
+    // Mobile Imprint //
+   ===================================================== */
+.imprint {
+
+    margin-top:3em;
+     p {
+            margin:0.5em 0 0 0;
+        }
+    h2 {
+        color:$link-color;
+        font-weight:200;
+        font-size:2.5em;
+    }
+    h3 {
+        margin:1em 0 0;
+    }
+    address {
+        padding-top:0.5em;
+        p {
+          margin:0;
+        }
+    }
+}
+// Team //////////////////////////////////////
+.team {
+    margin-top:5em;
+    // Team //
+    li {
+        float:left;
+        list-style:none;
+        padding:1em 1em;
+        div {
+            float:left;
+        }
+        .team-image {
+            margin-right:1em;
+        }
+    }
+    img.team-avatar{
+        width:120px;
+        -moz-border-radius:10px;
+        border-radius: 10px;
+
+    }
+}
+
+/* ========================================================
+    // Media Queries //
+   ===================================================== */
+
+@media screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+  nav.site-navigation {
+    a {
+      float: left;
+      width: 44%;
+      margin: 0 1.7%;
+      padding: 15px 2%;
+      margin-bottom: 0;
+    }
+    li:first-child a {
+        margin-left: 0;
+    }
+
+    li:last-child a {
+        margin-right: 0;
+    }
+  }
+
+/* ====================
+   INTERMEDIATE: About etc
+==================== */
+  .about, .meeting, .interest{
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  .members {
+    li {
+      float:left;
+      padding: 2% 3%;
+      width:40%;
+      border:none;
+      img {
+        float:left;
+        margin-right: 2%;
+      }
+    }
+  }
+  .footer-container {
+    margin:2em 0;
+    footer {
+      .footer_copyright {
+        float:left;
+      }
+      .footer_imprint-contact-legal {
+        float:right;
+      }
+    }
+  }
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .content-container {
+    margin-top:3em;
+  }
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+div#logo {
+  float:right;
+}
+  nav.site-navigation a {
+    width:15%;
+    padding: 20px 1% 7px;
+  }
+
+  /* ====================
+    INTERMEDIATE: About etc
+   ==================== */
+  .about, .meeting, .interest{
+    margin-bottom: 3em;
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+    .members {
+    li {
+      float:left;
+      padding: 2% 3%;
+      width:27%;
+      border:none;
+      img {
+        float:left;
+        margin-right: 2%;
+      }
+    }
+  }
+
+  .grid-left {
+    float:left;
+    width:44%;
+    text-align:right;
+  }
+  .grid-right {
+    width:54%;
+    float:right;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+/* ====================
+    INTERMEDIATE: General
+   ==================== */
+  .content-container {
+    margin-top:4.54em;
+  }
+   .wrapper {
+    margin: auto;
+    max-width:1070px;
+   }
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+ nav.site-navigation a {
+    width:10%;
+  }
+
+  /* ====================
+    INTERMEDIATE: About etc
+   ==================== */
+  .about, .meeting, .interest{
+    margin-bottom: 4em;
+    h1 {
+      font-size: 5em;
+    }
+  }
+}
+
+
