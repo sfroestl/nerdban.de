@@ -86,181 +86,6 @@ nav.pagination {
     nav.pagination a.prev, nav.pagination a.next {
       display: inline; } }
 
-@media screen and (max-width: 400px) {
-  .wrapper {
-    max-width: 400px; }
-
-  .grid-span {
-    width: 100%; } }
-@media screen and (max-width: 640px) {
-  .wrapper {
-    max-width: 640px; }
-
-  .grid-span {
-    width: 100%; } }
-@media screen and (min-width: 720px) {
-  .wrapper {
-    max-width: 720px; }
-
-  .grid-span {
-    margin-left: 1em;
-    margin-right: 1em;
-    float: left;
-    width: 45%%; }
-
-  .switch {
-    float: right; }
-    .switch p {
-      text-align: right; }
-
-  .grid-row [class*="span"]:first-child {
-    margin-left: 0; } }
-@media screen and (min-width: 1024px) {
-  .wrapper {
-    max-width: 920px; }
-
-  .grid-span h1 {
-    text-align: right;
-    font-size: 5.0em; } }
-@media screen and (max-width: 1024px) {
-  .grid-span {
-    text-align: left; }
-    .grid-span h1 {
-      font-size: 4.0em; } }
-.wrapper {
-  margin: 0 auto;
-  padding: 0 .9em 0 .9em; }
-
-.main {
-  padding: 5em 0 0 0; }
-
-#logo {
-  float: right;
-  margin-top: 0.6em; }
-  #logo object {
-    width: 220px; }
-
-header {
-  min-width: 400px; }
-
-h4 {
-  margin: 0; }
-
-.email {
-  color: #ff9922; }
-
-a {
-  color: #ff9922;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
-
-a.twitter-nick {
-  font-size: 0.9em; }
-  a.twitter-nick:before {
-    content: "@"; }
-
-#nav-top {
-  margin: 0 auto; }
-
-.nav-item {
-  margin-top: 40px;
-  float: left;
-  margin-right: 5px; }
-
-.main-nav {
-  float: left; }
-
-.site-navigation ul {
-  padding: 0;
-  margin: 0; }
-.site-navigation a {
-  padding: 50px 15px 5px 15px;
-  text-align: center;
-  color: #ff9922;
-  letter-spacing: 1px; }
-  .site-navigation a:hover {
-    text-decoration: none;
-    background-color: #666666;
-    -ms-transition: all 0.15s ease-in-out;
-    -webkit-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
-    -moz-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out; }
-  .site-navigation a:active {
-    background-color: #666666;
-    color: white; }
-.site-navigation .selected {
-  background-color: #666666;
-  color: white; }
-
-.about, .meeting, .interest {
-  margin-bottom: 6em; }
-  .about p, .meeting p, .interest p {
-    margin-top: 1.4em;
-    font-size: 1.1em; }
-  .about h1, .meeting h1, .interest h1 {
-    vertical-align: bottom;
-    margin: 0;
-    padding: 0;
-    color: #ff9922;
-    font-weight: 100; }
-
-.members-container, .team-container, .main-conainer {
-  min-width: 400px;
-  background-color: #f5ede3; }
-
-.members, .team {
-  padding-bottom: 2em;
-  color: #aa9885; }
-  .members h1, .team h1 {
-    font-size: 2.5em;
-    text-align: center; }
-  .members h3, .team h3 {
-    font-weight: 300;
-    text-align: center; }
-  .members li.member, .team li.member {
-    float: left;
-    padding: 2em;
-    list-style: none; }
-
-.member-card-list a.twitter-nick {
-  color: #aa9885; }
-.member-card-list img.member-avatar {
-  width: 70px;
-  -moz-border-radius: 5px;
-  border-radius: 5px; }
-
-.team {
-  margin-top: 5em; }
-  .team li {
-    float: left;
-    list-style: none;
-    padding: 1em 1em; }
-    .team li div {
-      float: left; }
-    .team li .team-image {
-      margin-right: 1em; }
-  .team img.team-avatar {
-    width: 120px;
-    -moz-border-radius: 10px;
-    border-radius: 10px; }
-  .team .twitter-nick {
-    color: #aa9885; }
-
-.imprint {
-  margin-top: 5em; }
-  .imprint p {
-    margin: 0.5em 0 0 0; }
-  .imprint h2 {
-    color: #ff9922;
-    font-weight: 200;
-    font-size: 2.5em; }
-  .imprint h3 {
-    margin: 1em 0 0; }
-  .imprint address {
-    padding-top: 0.5em; }
-
 article {
   margin-bottom: 3em; }
   article header {
@@ -293,31 +118,254 @@ article {
 .blog-entry .grid-span img {
   width: 100%; }
 
-.footer-container {
-  padding-top: 3em; }
+/* ========================================================
+    // General //
+   ===================================================== */
+.wrapper {
+  margin: 0 5%;
+  width: 90%; }
 
+h4 {
+  margin: 0; }
+
+.email {
+  color: #ff9922; }
+
+img {
+  width: 100%; }
+
+a {
+  color: #ff9922;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+a.twitter-user:before {
+  content: "@"; }
+
+/* ========================================================
+    // Mobile Menue //
+   ===================================================== */
+#logo img {
+  width: 280px; }
+
+.header-container {
+  margin-bottom: 1em; }
+
+nav.site-navigation ul {
+  margin: 0;
+  padding: 0; }
+nav.site-navigation a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  color: #666666;
+  background: #dddddd; }
+  nav.site-navigation a:hover {
+    color: #ff9922;
+    text-decoration: none;
+    background-color: #666666; }
+  nav.site-navigation a.selected {
+    color: white;
+    background-color: #666666; }
+
+/* ========================================================
+    // Mobile Footer //
+   ===================================================== */
 footer {
-  min-width: 400px;
-  padding-top: 2em;
-  height: 200px;
   color: #aa9885;
   text-align: center;
   font-size: 0.9em; }
-  footer .footer_copyright-imprint {
-    padding-top: 1.5em;
-    margin-top: 1em;
-    margin-bottom: 1em; }
-  footer p {
-    padding: 0;
-    margin: 0; }
-  footer .footer_copyright {
-    float: left; }
-  footer .footer_imprint-contact-legal {
-    padding-right: 1em;
-    float: right; }
   footer a {
     color: #aa9885; }
 
+/* ========================================================
+    // Mobile Landingpage //
+   ===================================================== */
+.about, .meeting, .interest {
+  margin-bottom: 2em; }
+  .about h1, .about p, .meeting h1, .meeting p, .interest h1, .interest p {
+    padding: 0;
+    margin: 0; }
+  .about h1, .meeting h1, .interest h1 {
+    vertical-align: bottom;
+    color: #ff9922;
+    font-weight: 100; }
+
+.members-container, .team-container {
+  background-color: #f5ede3;
+  padding-bottom: 3em; }
+
+.members, .team {
+  color: #aa9885; }
+  .members .member-card-container, .team .member-card-container {
+    min-height: 75px;
+    width: 100%; }
+  .members p, .team p {
+    padding: 1em 0 0 0;
+    margin: 0; }
+  .members h1, .team h1 {
+    font-size: 2.5em;
+    text-align: center; }
+  .members h3, .team h3 {
+    font-weight: 300;
+    text-align: center; }
+  .members ul, .team ul {
+    padding: 0; }
+  .members li, .team li {
+    border-top: 1px dotted #aa9885;
+    font-size: 0.9em;
+    list-style: none;
+    padding: 1em 0 1em 0;
+    margin-bottom: 1em; }
+    .members li img, .team li img {
+      float: right; }
+  .members a.twitter-user, .team a.twitter-user {
+    font-weight: 200;
+    color: #aa9885; }
+  .members img, .team img {
+    width: 75px;
+    -moz-border-radius: 40px;
+    border-radius: 40px; }
+
+/* ========================================================
+    // Mobile Imprint //
+   ===================================================== */
+.imprint {
+  margin-top: 3em; }
+  .imprint p {
+    margin: 0.5em 0 0 0; }
+  .imprint h2 {
+    color: #ff9922;
+    font-weight: 200;
+    font-size: 2.5em; }
+  .imprint h3 {
+    margin: 1em 0 0; }
+  .imprint address {
+    padding-top: 0.5em; }
+    .imprint address p {
+      margin: 0; }
+
+.team {
+  margin-top: 5em; }
+  .team li {
+    float: left;
+    list-style: none;
+    padding: 1em 1em; }
+    .team li div {
+      float: left; }
+    .team li .team-image {
+      margin-right: 1em; }
+  .team img.team-avatar {
+    width: 120px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+
+/* ========================================================
+    // Media Queries //
+   ===================================================== */
+@media screen and (min-width: 480px) {
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  nav.site-navigation a {
+    float: left;
+    width: 44%;
+    margin: 0 1.7%;
+    padding: 15px 2%;
+    margin-bottom: 0; }
+  nav.site-navigation li:first-child a {
+    margin-left: 0; }
+  nav.site-navigation li:last-child a {
+    margin-right: 0; }
+
+  /* ====================
+     INTERMEDIATE: About etc
+  ==================== */
+  .about h1, .meeting h1, .interest h1 {
+    font-size: 3em; }
+
+  .members li {
+    float: left;
+    padding: 2% 3%;
+    width: 40%;
+    border: none; }
+    .members li img {
+      float: left;
+      margin-right: 2%; }
+
+  .footer-container {
+    margin: 2em 0; }
+    .footer-container footer .footer_copyright {
+      float: left; }
+    .footer-container footer .footer_imprint-contact-legal {
+      float: right; } }
+@media screen and (min-width: 768px) {
+  .content-container {
+    margin-top: 3em; }
+
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  div#logo {
+    float: right; }
+
+  nav.site-navigation a {
+    width: 15%;
+    padding: 20px 1% 7px; }
+
+  /* ====================
+    INTERMEDIATE: About etc
+   ==================== */
+  .about, .meeting, .interest {
+    margin-bottom: 3em; }
+    .about h1, .meeting h1, .interest h1 {
+      font-size: 3.5em; }
+
+  .members li {
+    float: left;
+    padding: 2% 3%;
+    width: 27%;
+    border: none; }
+    .members li img {
+      float: left;
+      margin-right: 2%; }
+
+  .grid-left {
+    float: left;
+    width: 44%;
+    text-align: right; }
+
+  .grid-right {
+    width: 54%;
+    float: right; } }
+@media screen and (min-width: 1024px) {
+  /* ====================
+      INTERMEDIATE: General
+     ==================== */
+  .content-container {
+    margin-top: 4.54em; }
+
+  .wrapper {
+    margin: auto;
+    max-width: 1070px; }
+
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  nav.site-navigation a {
+    width: 10%; }
+
+  /* ====================
+    INTERMEDIATE: About etc
+   ==================== */
+  .about, .meeting, .interest {
+    margin-bottom: 4em; }
+    .about h1, .meeting h1, .interest h1 {
+      font-size: 5em; } }
 /* ==========================================================================
    Media Queries
    ========================================================================== */

@@ -1,18 +1,13 @@
-@media screen and (max-width: 400px) {
+@media only screen and (min-width: 400px) {
+  #logo {
+    float: right;
+    margin-top: 0.6em; }
+    #logo object {
+      width: 100px; } }
+@media screen and (min-width: 768px) {
   .wrapper {
-    max-width: 400px; }
-
-  .grid-span {
-    width: 100%; } }
-@media screen and (max-width: 640px) {
-  .wrapper {
-    max-width: 640px; }
-
-  .grid-span {
-    width: 100%; } }
-@media screen and (min-width: 720px) {
-  .wrapper {
-    max-width: 720px; }
+    width: 1026px;
+    /* 1140px - 10% for margins */ }
 
   .grid-span {
     margin-left: 1em;
@@ -26,16 +21,14 @@
       text-align: right; }
 
   .grid-row [class*="span"]:first-child {
-    margin-left: 0; } }
-@media screen and (min-width: 1024px) {
-  .wrapper {
-    max-width: 920px; }
+    margin-left: 0; }
 
-  .grid-span h1 {
+  h1 {
     text-align: right;
-    font-size: 5.0em; } }
-@media screen and (max-width: 1024px) {
-  .grid-span {
-    text-align: left; }
-    .grid-span h1 {
-      font-size: 4.0em; } }
+    font-size: 5.0em; }
+
+  #logo {
+    float: right;
+    margin-top: 0.6em; }
+    #logo object {
+      width: 220px; } }

@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$link-color".
-        on line 15 of css/components/pagination.scss
+        on line 16 of css/components/pagination.scss
 
-10:     border: 0;
-11:   }
-12: 
-13:   a:hover {
-14:     text-decoration: none;
-15:     background: $link-color;
-16:     border-color: $link-color;
-17:     color: white;
-18:     text-shadow: none;
-19:   }
-20: 
+11:     border: 0;
+12:   }
+13: 
+14:   a:hover {
+15:     text-decoration: none;
+16:     background: $link-color;
+17:     border-color: $link-color;
+18:     color: white;
+19:     text-shadow: none;
+20:   }
+21: 
 
 Backtrace:
-css/components/pagination.scss:15
+css/components/pagination.scss:16
 /Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/script/variable.rb:49:in `_perform'
 /Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/script/node.rb:40:in `perform'
 /Users/Sebastian/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:294:in `visit_prop'
@@ -70,4 +70,4 @@ css/components/pagination.scss:15
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$link-color\".\A         on line 15 of css/components/pagination.scss\A \A 10:     border: 0;\A 11:   }\A 12: \A 13:   a:hover {\A 14:     text-decoration: none;\A 15:     background: $link-color;\A 16:     border-color: $link-color;\A 17:     color: white;\A 18:     text-shadow: none;\A 19:   }\A 20: "; }
+  content: "Syntax error: Undefined variable: \"$link-color\".\A         on line 16 of css/components/pagination.scss\A \A 11:     border: 0;\A 12:   }\A 13: \A 14:   a:hover {\A 15:     text-decoration: none;\A 16:     background: $link-color;\A 17:     border-color: $link-color;\A 18:     color: white;\A 19:     text-shadow: none;\A 20:   }\A 21: "; }

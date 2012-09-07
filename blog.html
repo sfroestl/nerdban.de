@@ -22,17 +22,21 @@
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
-    <header class="wrapper clearfix">
-      <div id="nav-top">
+    <div class="header-container">
+      <header class="wrapper clearfix">
+        <div align="right" id="logo"><a href="index.html">
+          <img src="img/logo.svg"></img></a>
+        </div>
+
         <nav class="site-navigation">
           <ul class="nav-list">
             <li class="nav-item"><a href="index.html">Bande</a></li>
             <li class="nav-item"><a href="blog.html" class="selected">Blog</a></li>
           </ul>
         </nav>
-      </div>
-      <div id="logo"><a href="index.html"><object type="image/svg+xml" data="img/logo.svg"></object></a></div>
-    </header>
+
+      </header>
+    </div>
 
     <div id="content" class="wrapper clearfix">
       <article class="blog-entry">
@@ -51,11 +55,11 @@
           <span class="post-date"><time>25.08.2012</time></span>
           <span class="post-tags"><a href="#" class="tag">Irrtum</a>, <a href="#" class="tag">Vernunft</a>, <a href="#" class="tag">Baumeister</a></span>
         </header>
-        <div class="grid-row">
-          <div class="grid-span">
+        <div class="grid-row clearfix">
+            <div class="grid-left">
             <img src="img/sample1.jpg"></img>
           </div>
-          <div class="grid-span">
+          <div class="grid-right">
             <p>
               Dagegen tadelt und hasst man mit Recht Den, welcher sich durch die Lockungen einer gegenwärtigen Lust erweichen und verführen lässt, ohne in seiner blinden Begierde zu sehen, welche Schmerzen und Unannehmlichkeiten seiner deshalb warten.
             </p>
@@ -72,7 +76,7 @@
       </article>
     </div>
 
-
+    <div "pagination-container">
       <nav class="pagination clearfix">
         <a href="/" class="prev" rel="prev">← Vorgherige</a>
         <a href="/" rel="prev">1</a>
@@ -83,12 +87,16 @@
         <a href="/blog/53">53</a>
         <a href="/blog/3" class="next" rel="next">Nächste →</a>
       </nav>
-    <footer>
-        <div class="footer_copyright-imprint wrapper">
-          <p class="footer_copyright">Copyright © 2012 nerdban.de</p>
-          <p class="footer_imprint-contact-legal"><a href="imprint.html">Impressum</a> | <a href="imprint.html">Haftung  </a> | <a href="imprint.html">Kontakt</a></p>
-        </div>
-    </footer>
+    </div>
+
+    <div class="footer-container">
+      <footer>
+          <div class="wrapper clearfix">
+            <p class="footer_copyright">Copyright © 2012 nerdban.de</p>
+            <p class="footer_imprint-contact-legal"><a href="imprint.html">Impressum</a> | <a href="imprint.html">Haftung  </a> | <a href="imprint.html">Kontakt</a></p>
+          </div>
+      </footer>
+    </div>
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>-->
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
 

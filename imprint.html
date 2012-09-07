@@ -22,18 +22,22 @@
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
-    <header class="wrapper clearfix">
-      <div id="nav-top">
+<div class="header-container">
+      <header class="wrapper clearfix">
+        <div align="right" id="logo"><a href="index.html">
+          <img src="img/logo.svg"></img></a>
+        </div>
+
         <nav class="site-navigation">
           <ul class="nav-list">
             <li class="nav-item"><a href="index.html">Bande</a></li>
             <li class="nav-item"><a href="soon.html">Blog</a></li>
           </ul>
         </nav>
-      </div>
-      <div id="logo"><a href="index.html"><object type="image/svg+xml" data="img/logo.svg"></object></a></div>
-    </header>
 
+      </header>
+    </div>
+<!--
     <div class="main-container">
       <div class="team-container">
         <section class="team">
@@ -48,7 +52,7 @@
                   <div class="team-desc">
                       <h4>Sebastian Fröstl</h4>
                       <p>Student Medieninformatik TU Dresden</p>
-                      <a href="https://twitter.com/sfroestl" class="twitter-nick">sfroestl</a>
+                      <a href="https://twitter.com/sfroestl" class="twitter-user">sfroestl</a>
                       <p class="email">team(at)nerdban.de</p>
                   </div>
                 </li>
@@ -60,7 +64,7 @@
                     <div class="team-desc">
                       <h4>Johannes Schad</h4>
                       <p>Student Informatik TU Dresden</p>
-                      <a href="https://twitter.com/jmaschad" class="twitter-nick">jmaschad</a>
+                      <a href="https://twitter.com/jmaschad" class="twitter-user">jmaschad</a>
                     </div>
                 </li>
               </ul>
@@ -69,13 +73,13 @@
         </section>
       </div>
 
-
+-->
         <div class="imprint-container">
           <div id="imprint" class="imprint wrapper">
             <h2>Impressum</h2>
             <p>Impressum gemäß § 5 TMG</p>
             <h3 id="contact">Kontakt</h3>
-            <p class="email">team(at)nerdban.de</p>
+            <!--<p class="email">team(at)nerdban.de</p>-->
             <p>Verantwprtlich für den Inhalt im Sinne des § 55 Abs. 2 RStV:</p>
             <address>
               <p>Sebastian Fröstl</p>
@@ -93,12 +97,14 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer_copyright-imprint wrapper">
-          <p class="footer_copyright">Copyright © 2012 nerdban.de</p>
-          <p class="footer_imprint-contact-legal"><a href="imprint.html#imprint">Impressum</a> | <a href="imprint.html#legal">Haftung</a> | <a href="imprint.html#contact">Kontakt</a></p>
-        </div>
-    </footer>
+    <div class="footer-container">
+      <footer>
+          <div class="wrapper clearfix">
+            <p class="footer_copyright">Copyright © 2012 nerdban.de</p>
+            <p class="footer_imprint-contact-legal"><a href="imprint.html">Impressum</a> | <a href="imprint.html">Haftung  </a> | <a href="imprint.html">Kontakt</a></p>
+          </div>
+      </footer>
+    </div>
 
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>-->
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
