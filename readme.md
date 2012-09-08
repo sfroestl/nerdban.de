@@ -1,5 +1,5 @@
 # Website of nerdban.de
 
-# Requirements
+## Requirements
 We use SASS for simpler CSS. 
 visit http://sass-lang.com/ for further information.
