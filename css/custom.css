@@ -207,12 +207,16 @@ footer {
 
   .members li {
     float: left;
-    padding: 2% 3%;
-    width: 27%;
+    padding: 2% 2% 2% 0;
+    width: 22%;
     border: none; }
     .members li img {
       float: left;
       margin-right: 2%; }
+    .members li:first-child {
+      padding-left: 0; }
+    .members li:last-child {
+      padding-right: 0; }
 
   .grid-left {
     float: left;
@@ -231,7 +235,7 @@ footer {
 
   .wrapper {
     margin: auto;
-    max-width: 1070px; }
+    max-width: 1024px; }
 
   /* ====================
       INTERMEDIATE: Menu

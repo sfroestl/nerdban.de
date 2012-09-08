@@ -303,12 +303,18 @@ div#logo {
     .members {
     li {
       float:left;
-      padding: 2% 3%;
-      width:27%;
+      padding: 2% 2% 2% 0;
+      width:22%;
       border:none;
       img {
         float:left;
         margin-right: 2%;
+      }
+      &:first-child{
+        padding-left:0;
+      }
+      &:last-child{
+        padding-right:0;
       }
     }
   }
@@ -336,7 +342,7 @@ div#logo {
   }
    .wrapper {
     margin: auto;
-    max-width:1070px;
+    max-width:1024px;
    }
 
 /* ====================
