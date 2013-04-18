@@ -99,7 +99,7 @@ footer {
     border-top: 1px dotted #aa9885;
     font-size: 0.9em;
     list-style: none;
-    padding: 1em 0 1em 0;
+    padding: 5% 0 5% 0;
     margin-bottom: 1em; }
     .members li img, .team li img {
       float: right; }
@@ -133,8 +133,7 @@ footer {
   margin-top: 5em; }
   .team li {
     float: left;
-    list-style: none;
-    padding: 1em 1em; }
+    list-style: none; }
     .team li div {
       float: left; }
     .team li .team-image {
@@ -170,7 +169,7 @@ footer {
 
   .members li {
     float: left;
-    padding: 2% 3%;
+    padding: 3% 2%;
     width: 40%;
     border: none; }
     .members li img {
@@ -207,7 +206,6 @@ footer {
 
   .members li {
     float: left;
-    padding: 2% 2% 2% 0;
     width: 22%;
     border: none; }
     .members li img {
